@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment_form.css">
+    <title>Payment Form</title>
+</head>
+<body>
+    <div class="container" >
+    <form action="" method="get">
+        <h1 class="mainHead">Payment Form</h1><hr>
+        <h4>Required fields are marked wtih '*'</h4>
+
+        <h2>Contact Information</h2>
+        <p>Name * </p>
+        <input type="text" required placeholder="Enter Your Name" >
+
+        <p>
+            <fieldset>
+                <legend>Gender</legend>
+            Male <input type="radio" name="gender" id="Male"> 
+            Female <input type="radio" name="gender" id="Female">
+            
+        </fieldset>
+        </p>
+
+        <p>Email * </p>
+        <input type="email" name="email" id="email" required placeholder="abcd123@email.com" >
+
+        <p>Address * </p>
+        <textarea name="Address" id="Address" cols="30" rows="5" required placeholder="House No./Building Name/Building No./Street/City/State" ></textarea>
+
+        <p>Pincode * </p>
+        <input type="number" name="pincode" id="pincode" required placeholder="123456" >
+    <br> <hr>
+
+
+<h2>Payment Information</h2>
+
+<p>Card Type *</p>
+    <select name="card_type" id="card_type" required >
+        <option value="">Select Card Type</option>
+        <option value="visa">Visa</option>
+        <option value="master_card">Master Card</option>
+        <option value="rupay">Rupay</option>
+    </select>
+
+<p>Card Number *</p> 
+<input type="number" name="card_name" id="card_name" required placeholder="1234-1234-1234-1234" >
+
+<p>Expiration Date *</p>
+<input type="date" name="exp_date" id="exp_date" required >
+
+<p>CVV *</p>
+<input type="password" name="cvv" id="cvv" required placeholder="xxx" >
+
+ <hr>
+
+<input type="submit" value="Make Payment Now">
+
+  <input type="reset" value="Reset Form">
+
+    </form>
+</div>
+</body>
+</html>
